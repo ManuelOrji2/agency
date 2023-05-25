@@ -1,0 +1,40 @@
+.heroCont h1{
+    position: absolute;
+    width: 466px;
+    height: 87px;
+    left: 87px;
+    top: 260px;
+    font-family: 'TT Trailers Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 86px;
+}
+
+.heroCont p{
+    position: absolute;
+    width: 466px;
+    height: 180px;
+    left: 87px;
+    top: 359px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.heroCont span{
+    position: absolute;
+    width: 39px;
+    height: 9px;
+    left: 30px;
+    top: 280px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 86.5%;
+    transform: rotate(90deg);
+}

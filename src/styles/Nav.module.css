@@ -1,0 +1,13 @@
+.navLink{
+    padding: 5px 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.navLink:last-child{
+    border: 1px solid #000;
+}
+
+.navLink:hover{
+    text-decoration: line-through;
+}

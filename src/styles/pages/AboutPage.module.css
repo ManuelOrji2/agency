@@ -1,0 +1,9 @@
+.about{
+    background: #5EA6C4;
+    height: 100vh;
+    width: 380vw;
+    display: flex;
+    /* scroll-snap-type: mandatory;
+    scroll-behavior: smooth; */
+}
+

@@ -1,0 +1,116 @@
+.button{
+    border: 0.5px solid #202020; 
+    width: fit-content; 
+    padding: 4px 8px;
+    margin-right: 5px;
+    font-size: 10px;
+    font-family: 'GT America Trial';
+    white-space: nowrap;
+}
+
+.webDesignButtons, .webDevButtons, .digMktButtons, .brandingButtons{
+    transform: rotate(-90deg);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 10px;
+}
+
+.webDesignButtons{
+    top: 23%;
+    left: -40%;
+}
+
+.webDevButtons{
+    top: 25%;
+    left: -45%;
+}
+
+.digMktButtons{
+    top: 21.1%;
+    left: -40%;
+   
+}
+
+.brandingButtons{
+    top: 26%;
+    left: -40%;
+}
+
+.servicesContainer{
+    right: 850px;
+}
+
+.webDesign,.webDev,.digMkt,.branding{
+    padding: 40px 10px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    line-height: 38.06px;
+    font-size: 10px;
+    cursor: pointer;
+
+}
+
+
+.header{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 87px;
+    letter-spacing: 0em;
+    text-align: end;
+}
+
+h2{
+    font-size: 44px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+
+}
+
+p{
+    font-size: 14px;
+    width: 279px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.webDesign{
+    background: #D9D9D9;
+    height:450px;
+    left: 0px;
+    top: 41px;
+    padding: 40px 20px 0;
+}
+
+.digMkt{
+    background: #FED557;
+    height: 491px;
+    left: 200px;
+    top: 0px;
+}
+
+.digMktImg{
+    background: url('../images/digitalmkt-img.png');
+    width:146px;
+    height:110px;
+    margin-left: 55px;
+}
+
+.webDev{
+    background: #9D9F9F;
+    height:463px;
+    left: 400px;
+    top: 28px;
+    padding: 30px 0 0;
+
+}
+
+.branding{
+    background: #5EA6C4;
+    height: 422px;
+    left: 600px;
+    top: 69px;
+}

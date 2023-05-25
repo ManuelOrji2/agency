@@ -1,0 +1,61 @@
+.rightArrow{
+    animation: rightMotion 1s ease infinite alternate-reverse;
+}
+
+
+.header{
+    font-size: 150px;
+    height: 120px;
+    font-weight: 800;
+    line-height: 129.75px;
+}
+
+@keyframes rightMotion {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(5px);
+
+    }
+    
+}
+
+.animatedTexts{
+    height: 120px;
+    width: 500px;
+    background-repeat: no-repeat;
+    animation: upMotion step-end 15s infinite ;
+    
+}
+
+@keyframes upMotion  {
+    0%{
+        background: url(../images/standout.png);
+        background-repeat: no-repeat;
+ 
+
+    }
+    25%{
+        background: url(../images/rebel.png);
+        background-repeat: no-repeat;
+
+
+    }
+    50%{
+        background: url(../images/wow.png);
+        background-repeat: no-repeat;
+
+
+    }
+
+    75%{
+        background: url(../images/impress.png);
+        background-repeat: no-repeat;
+    }
+
+    100%{
+        /* background: url(../images/impress.png);
+        background-repeat: no-repeat; */
+    }
+}

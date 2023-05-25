@@ -1,0 +1,65 @@
+.aboutHeroCont{
+    width: 62%;
+}
+
+.aboutHeroCont h1{
+    position: absolute;
+    width: 398px;
+    height: 86px;
+    left: 87px;
+    top: 310px;
+    font-family: 'TT Trailers Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 86.5%;
+}
+
+.aboutHeroCont h3{
+    position: absolute;
+    width: 35px;
+    height: 17px;
+    left: 87px;
+    top: 285px;
+    font-family: 'TT Trailers Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 86.5%;
+}
+
+.aboutHeroCont span{
+    position: absolute;
+    width: 13px;
+    height: 9px;
+    left: 59px;
+    top: 338px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 86.5%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+
+.aboutHeroCont p{
+    position: absolute;
+    width: 422px;
+    height: 108px;
+    left: 88px;
+    top: 408px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.aboutHeroBg{
+    background: url(../images/Group\ 59.png) no-repeat;
+    width: 38%;
+    height: 100vh;
+}
+

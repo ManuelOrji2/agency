@@ -1,0 +1,110 @@
+.header{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 86.9px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.projParag{
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: justify;
+Width: 345px;
+}
+
+.projOne{
+    width: 180px;
+    min-width: 60px;
+    height: 641px;
+    background: url(../images/Rectangle\ 10\ \(1\).png) no-repeat;
+    transition: all 0.2s ease-in ;
+
+}
+
+.projOne:hover{
+    position: relative;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projTwo{
+    width: 180px;
+    min-width: 60px;
+    height: 641px;
+    background: url(../images/Rectangle\ 11\ \(2\).png) no-repeat;
+    transition: all 0.2s ease-in ;
+
+}
+
+.projTwo:hover{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.projThree{
+    width: 180px;
+    min-width: 60px;
+    height: 641px;
+    background: url(../images/Rectangle\ 12.png);
+    transition: all 0.2s ease-in ;
+
+}
+
+.projThree:hover{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.projFour{
+    width: 180px;
+    min-width: 60px;
+    height: 641px;
+    background: url(../images/Rectangle\ 13.png) no-repeat;
+    transition: all 0.2s ease-in ;
+}
+
+.projFour:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    position: relative;
+
+  
+}
+
+.projOne, .projTwo, .projThree, .projFour{
+    filter: brightness(400%);
+}
+
+.projOne:hover, .projTwo:hover, .projThree:hover, .projFour:hover{
+    filter: brightness(100%);
+}
+
+
+.projOne:hover::before, .projTwo:hover::before,.projThree:hover::before,.projFour:hover::before{
+    content: "VIEW PROJECT";
+    width: fit-content;
+    padding: 2px 8px;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    font-size: x-large;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}

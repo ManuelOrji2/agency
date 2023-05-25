@@ -1,0 +1,80 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 17px;
+}
+
+.header h1{
+    font-family: 'TT Trailers Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86.5%;
+}
+
+.aboutSecOneLeftCont{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutSecOneRightCont{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.firstParag{
+    width: 340px;
+    height: 72px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.secondParag{
+    width: 340px;
+    height: 90px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.aboutSecOneRightCont h1{
+    width: 375px;
+    height: 55px;
+    font-family: 'TT Trailers Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86.5%;
+}
+
+.thirdParag{
+    width: 375px;
+    height: 162px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.aboutSecOneRightContImg{
+    background: url(../images/image\ 1.png) no-repeat;
+    width: 478px;
+    height: 331px;
+}

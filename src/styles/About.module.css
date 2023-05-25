@@ -1,0 +1,51 @@
+.header{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 87px;
+    letter-spacing: 0em;
+    text-align: end;
+}
+
+.aboutParag{
+    font-size: 14px;
+    width: 290px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    /* text-align: end; */
+}
+
+.aboutImg{
+    background: url('../images/about-img.png') no-repeat;
+    width: 37.5%;
+    height: 100%;
+    animation: changeImage 5s  infinite alternate-reverse;
+}
+
+.aboutImg:hover{
+    /* background: url('../images/aboutImg-grey.png') no-repeat;
+    animation: changeGreyImage 5s infinite alternate-reverse; */
+    filter: grayscale(100%);
+
+
+}
+
+@keyframes changeImage {
+    from{
+    background: url('../images/about-img.png') no-repeat;
+
+    }
+    to{
+    background: url('../images/disruptivo-iQ15DTx-63k-unsplash\ 1.png') no-repeat;
+    }
+}
+
+/* @keyframes changeGreyImage {
+    from{
+    background: url('../images/aboutImg-grey.png') no-repeat;
+
+    }
+    to{
+    background: url('../images/disruptivo-iQ15DTx-63k-unsplash\ 2\ \(1\).png') no-repeat;
+    }
+} */
