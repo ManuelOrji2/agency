@@ -1,9 +1,10 @@
-.ServicesPageBranding{
+.ServicesPageMkt{
     display: flex;
     justify-content: space-around;
     width: 70vw;
     position: relative;
 }
+
 
 .leftCon{
     display: flex;
@@ -27,7 +28,7 @@
 }
 
 .leftCon h1{
-    width: 116px;
+    /* width: 116px; */
     height: 52px;
     font-family: 'TT Trailers Trial';
     font-style: normal;
@@ -69,14 +70,24 @@
     line-height: 18px;
 }
 
-.webDesignImg{
-    background: url('../images/Frame.png');
-    height: 768px;
-    width: 420px;   
+
+
+
+.mktImgcont{
+    width: 420px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+    .mktImg{
+        background: url("../images/Frame\ \(1\).png");
+        height: 768px;
+        width: 420px;
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+    }
 }
 
-.brandingImg{
-    background: url('../images/Frame\ \(3\).png');
-    height: 768px;
-    width: 420px;   
-}

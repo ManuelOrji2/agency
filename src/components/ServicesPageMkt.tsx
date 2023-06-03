@@ -1,4 +1,4 @@
-import styles from "../styles/ServicesPageMkt.module.css"
+import styles from "../styles/ServicesPageMkt.module.scss"
 
 
 type digMktDetail={
@@ -45,9 +45,10 @@ const ServicesPageMkt = () => {
             }
             </div>
       </div>
-      <div className={styles.mktImg}>
-
+      <div className={styles.mktImgcont}>
+         <div className={styles.mktImg}></div>
       </div>
+     
     </div>
   )
 }

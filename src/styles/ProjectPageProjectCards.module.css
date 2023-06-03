@@ -1,0 +1,23 @@
+.card span{
+    position: absolute;
+    left: -60px;
+    bottom: 42px;
+    width: 90px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    transform: rotate(90deg);
+
+}
+
+.card p {
+    width: 300px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}

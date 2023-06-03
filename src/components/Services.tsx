@@ -4,16 +4,18 @@ import webDevImg from "../images/webdev-img.png"
 import brandingImg from "../images/branding-img.png"
 
 import styles from "../styles/Services.module.css"
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
+
 
 
 const Services = () => {
+
   return (
-    <main className="h-screen w-screen snap-center flex px-10 relative">
+    <main id="services" className="h-screen w-screen snap-center flex px-10 relative">
         <div className="w-1/3 flex flex-col gap-7 items-end absolute top-1/3">
             <h1 className={`${styles.header} font-bold text-end`}>SERVICES<br /> THAT <br /> SUITS YOU</h1>
             <p>Hunt down the service that'll have you fist-pumping like a champ!</p>    
-            <Link to="/services" className="cursor-pointer flex gap-2 font-bold text-xl">
+            <Link  to="/services" className="cursor-pointer flex gap-2 font-bold text-xl">
                 <span>GET A GLIMPSE!</span>
                 <img  src={rightArrow} alt="" width={20}/>
             </Link>        
@@ -30,7 +32,7 @@ const Services = () => {
                 </div>
                 <img src={webDesignImg} alt=""/>
             </Link>
-            <Link  to={"/services/#dig-mkt"} className={`${styles.digMkt} flex flex-col items-center justify-between`}>
+            <Link to={"/services/#dig-mkt"} className={`${styles.digMkt} flex flex-col items-center justify-between`}>
                 <div className="flex" >
                     <div className={styles.digMktButtons}>
                         <span className={styles.button}>Content marketing</span>
@@ -43,7 +45,7 @@ const Services = () => {
                 </div>
                 <h2 className="px-10">DIGITAL MARKETING</h2>
             </Link>
-            <Link  to={"/services/#web-dev"} className={`${styles.webDev} flex flex-col justify-between`}>
+            <Link to={"/services/#web-dev"} className={`${styles.webDev} flex flex-col justify-between`}>
                 <div className="flex justify-end" >
                     <div className={styles.webDevButtons}>
                         <span className={styles.button}>API Integration</span>
@@ -54,7 +56,7 @@ const Services = () => {
                 </div>
                 <img src={webDevImg} alt=""/>
             </Link>
-            <Link  to={"/services/#branding"} className={`${styles.branding} flex flex-col items-center justify-between`}>
+            <Link to={"/services/#branding"} className={`${styles.branding} flex flex-col items-center justify-between`}>
                 <div className="flex justify-end" >
                     <div className={styles.brandingButtons}>
                         <span className={styles.button}>Identity</span>

@@ -4,6 +4,11 @@ import Natasha from "../images/andre-adjahoe-Mwc7Y5MtO9A-unsplash-removebg-previ
 import John from "../images/johndoe.png"
 import Garry from "../images/garry.png"
 import Mcman from "../images/mcman.png"
+import Mckenzie from "../images/mckenzie.png"
+import Emma from "../images/Emma.png"
+import Sophia from "../images/sophia.png"
+import Michael from "../images/michael shaa.png"
+
 
 import leftArrow from '../images/leftArrow.svg'
 import disableLeftArrow from '../images/leftArrow copy.svg'
@@ -11,8 +16,8 @@ import disableLeftArrow from '../images/leftArrow copy.svg'
 import rightArrow from '../images/rightArrow.svg'
 import disableRightArrow from '../images/rightArrow copy.svg'
 
-import dot from '../images/dot.png'
-import grayDdot from '../images/gray-dot.png'
+import dot from '../images/Rectangle 46.png'
+import grayDdot from '../images/Rectangle 45.png'
 
 
 
@@ -68,35 +73,35 @@ export type Testifierprops ={
     },
   
     {
-        name: "John Doe",
-        testimony: "We had an amazing experience working with this design agency",
-        imgUrl: John,
-        position:"CEO,MoMo",
+        name: "MCKENZIE RUIZ",
+        testimony: "“The team at Design Horizon is a true gem in the design industry”.",
+        imgUrl: Mckenzie,
+        position:"CEO, Sobit",
         type: "secondSlide",
         backgroundColor: "#5EA6C4",
     },
     {
-        name: "John Doe",
-        testimony: "We had an amazing experience working with this design agency",
-        imgUrl: John,
-        position:"CEO,MoMo",
+        name: "EMMA SHEAMA",
+        testimony: "“I'm grateful to have found Design Horizon for our design needs.”",
+        imgUrl: Emma,
+        position:"Director of Marketing, GHI",
         type: "secondSlide",
         backgroundColor: "#9D9F9F",
     }, 
     {
-        name: "John Doe",
-        testimony: "We had an amazing experience working with this design agency",
-        imgUrl: John,
+        name: "SOPHIA NGUYEN",
+        testimony: "“Choosing this agency for our design needs was one of the best decisions we made.”",
+        imgUrl: Sophia,
 
-        position:"CEO,MoMo",
+        position:"Co-founder, JKL Startups",
         type: "secondSlide",
         backgroundColor: "#FED557",
     },
     {
-        name: "John Doe",
-        testimony: "We had an amazing experience working with this design agency",
-        imgUrl: John,
-        position:"CEO,MoMo",
+        name: "MICHAEL SHAH",
+        testimony: "“If you're looking for exceptional design work, look no further than Design Horizon.”",
+        imgUrl: Michael,
+        position:"Manager, VWX Retail",
         type: "secondSlide",
         backgroundColor: "#fff",
     },
@@ -134,7 +139,7 @@ const Testimonies = () => {
         </div>
         <div className='flex flex-col gap-5 items-center justify-center'>
            
-                <div className='flex flex-wrap w-[650px] gap-3 '>
+                <div className=' flex flex-wrap w-[650px] gap-3 '>
                     {
                         testifiers.map((testifier: Testifierprops,i)=>(
                             <Card key={i} testifier={testifier} />
@@ -143,7 +148,7 @@ const Testimonies = () => {
                 </div>         
            
             <div className='w-[335px] absolute bottom-10 right-24 flex items-center justify-between '>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 outline-none'>
                     
                     <button onClick={slideLeft}>
                         {

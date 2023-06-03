@@ -3,6 +3,8 @@ import linkedIn from '../images/linkedIn.png'
 import insta from "../images/insta.png"
 import fb from "../images/fb.png"
 import styles from "../styles/pages/ContactPage.module.css"
+import { useEffect, useRef, useState } from 'react'
+
 
 
 type social={
@@ -28,15 +30,37 @@ const socialLinks: social[] = [
 
 const servicesBtnTexts:string[]=["WEB DESIGN","WEB DEVELOPMENT","BRANDING","MARKETING"]
 
+const animatedTexts: string[] = ["COLLAB","PARTNER","WORK"]
+
 const ContactPage = () => {
+
+const [textIndex, setTextIndex] = useState(0)
+
+const changeText = (index: number) => {
+  return animatedTexts[index]
+}
+
+
+  useEffect(()=>{ 
+    setTimeout(() => {
+      if(textIndex !== animatedTexts.length - 1) {
+        setTextIndex(textIndex + 1)
+      }else {
+        setTextIndex(0)
+      }
+    }, 4949)
+ 
+  },)
+
+
   return (
     <main className={`${styles.contacts}`}>
         <Nav/>
         <div className='h-screen w-screen relative flex items-center justify-between px-20'>
             <div className={styles.leftCon}>
               <h4>CONTACT</h4>
-              <h1>LET'S <br />
-              <span>COLLAB</span></h1>
+              <h1>LET'S </h1>
+              <div className={`${styles.changingTextCon}`}><div className={styles.changingText}>{changeText(textIndex)}</div></div>
             </div>
             <form  className={`${styles.rightCon} flex flex-col gap-10 items-start`}>
               <div className='flex gap-20'>

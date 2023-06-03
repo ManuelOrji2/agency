@@ -1,13 +1,15 @@
-import styles from "../styles/AboutPageSecTwo.module.css"
+import styles from "../styles/AboutPageSecTwo.module.scss"
 import designHorizon from "../images/DESIGN HORIZON.png"
-import teamMate1 from "../images/Front.png"
-import teamMate2 from "../images/front.png"
-import teamMate3 from "../images/front (1).png"
-import teamMate4 from "../images/front (2).png"
-import teamMate5 from "../images/front (3).png"
-import teamMate6 from "../images/front (4).png"
-import teamMate7 from "../images/front (5).png"
-import teamMate8 from "../images/front (6).png"
+// import teamMate1 from "../images/Front.png"
+// import teamMate2 from "../images/front.png"
+// import teamMate3 from "../images/front (1).png"
+// import teamMate4 from "../images/front (2).png"
+// import teamMate5 from "../images/front (3).png"
+// import teamMate6 from "../images/front (4).png"
+// import teamMate7 from "../images/front (5).png"
+// import teamMate8 from "../images/front (6).png"
+
+// import { useState, SetStateAction, Dispatch } from "react"
 
 
 
@@ -35,9 +37,59 @@ const coreValues: values[] = [
     },
 ]
 
-const team:string[] = [teamMate1,teamMate2,teamMate3,teamMate4,teamMate5, teamMate6, teamMate7,teamMate8]
+type Mate={
+    // img: string,
+    className: string
+    // detailImg: string
+}
+
+const team:Mate[] = [{
+        // img:teamMate1,
+        className: styles.teamMate1,
+        // detailImg: teamMate2
+    },
+    {
+        // img:teamMate2,
+        className: styles.teamMate2,
+        // detailImg: teamMate2
+    },
+    {
+        // img:teamMate3,
+        className: styles.teamMate3,
+        // detailImg: teamMate2
+    },  
+    {
+        // img:teamMate4,
+        className: styles.teamMate4,
+        // detailImg: teamMate2
+    },
+    {
+        // img:teamMate5,
+        className: styles.teamMate5,
+        // detailImg: teamMate2
+    },  
+    {
+        // img:teamMate6,
+        className: styles.teamMate6,
+        // detailImg: teamMate2
+    },  
+    {
+        // img:teamMate7,
+        className: styles.teamMate7,
+        // detailImg: teamMate2
+    },  
+    {
+        // img:teamMate8,
+        className: styles.teamMate8,
+        // detailImg: teamMate2
+    },
+]
+
 
 const AboutPageSecTwo = () => {
+
+    // const [showMateDetail, setShowMateDetail] = useState (team.map((mate,i)=> (mate.img)))
+
   return (
     <div className="flex justify-evenly w-[130vw] snap-center">
         <div className={`${styles.aboutPageSecTwoLeftCon} flex flex-col gap-4 pt-[200px]`}>
@@ -57,15 +109,18 @@ const AboutPageSecTwo = () => {
         </div>
         <div className={`${styles.aboutPageSecTwoRightCon} relative flex items-center justify-center w-[47%] h-screen`}>
             <img className="absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]" src={designHorizon} alt="" width={995} />
-            <div className={`${styles.teamMates} grid grid-rows-2 grid-cols-4 gap-2`}>
+            <div className={`${styles.teamMates}`}>
                 {
                     team.map((mate,i)=>(
-                        <div key={i} >
-                            <img src={mate} alt="" width={191} height={251}/>
+                      <div key={i} className={mate.className} >
+                        <div className={styles.mateImg}>
+                          
                         </div>
-                    
+                        
+                      </div>
                     ))
-                }
+                }            
+
             </div>
         </div>
       

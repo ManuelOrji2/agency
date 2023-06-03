@@ -3,6 +3,7 @@ import rightArrow from "../images/rightArrow.svg"
 import styles from "../styles/Hero.module.css"
 
 
+
 const Hero = () => {
 
 
@@ -20,10 +21,10 @@ const Hero = () => {
             <p className="w-4/5 font-300 text-sm">We know that every business is unique. That's why we offer custom design solutions that are tailored to meet the specific needs of your business.</p>
         </div>
         <div></div>
-        <div className="absolute bottom-10 right-10 cursor-pointer flex gap-2 font-bold text-xl">
+        <a href='/#services' className="absolute bottom-10 right-10 cursor-pointer flex gap-2 font-bold text-xl">
             <span>LET'S GET THIS SHIT DONE!</span>
             <img className={styles.rightArrow} src={rightArrow} alt="" width={20}/>
-        </div>
+        </a>
     </main>
   )
 }

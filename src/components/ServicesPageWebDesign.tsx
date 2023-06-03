@@ -1,4 +1,4 @@
-import styles from "../styles/ServicesPageWebDesign.module.css"
+import styles from "../styles/ServicesPageWebDesign.module.scss"
 
 type webDesignDetail={
   header: string,
@@ -43,9 +43,10 @@ const ServicesPageWebDesign = () => {
           }
         </div>
       </div>
-      <div className={styles.webDesignImg}>
-
+      <div className={styles.webDesignImgcont}>
+         <div className={styles.webDesignImg}></div>
       </div>
+     
     </div>
   )
 }

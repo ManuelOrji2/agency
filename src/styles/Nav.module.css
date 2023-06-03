@@ -2,12 +2,21 @@
     padding: 5px 10px;
     font-size: 26px;
     cursor: pointer;
+    overflow: hidden;
+    height: 45px;
+
 }
 
 .navLink:last-child{
     border: 1px solid #000;
 }
 
-.navLink:hover{
-    text-decoration: line-through;
+.linkText{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+.linkText:hover {
+    transform: translateY(-40px);
 }

@@ -1,0 +1,35 @@
+.ProjectPageHero{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50vw;
+}
+
+.ProjectPageHero h3{
+    width: 40px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 86.5%;
+    transform: rotate(90deg);
+}
+
+.ProjectPageHero h1{
+    width: 245px;
+    font-family: 'TT Trailers Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 86.5%;
+}
+
+.ProjectPageHero p{
+    width: 500px;
+    height: 106px;
+    font-family: 'GT America Trial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;    
+}

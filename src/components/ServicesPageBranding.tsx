@@ -1,4 +1,4 @@
-import styles from "../styles/ServicesPageBranding.module.css"
+import styles from "../styles/ServicesPageBranding.module.scss"
 
 
 type brandingDetail={
@@ -44,8 +44,8 @@ const ServicesPageBranding = () => {
                 }
             </div>
         </div>
-        <div className={styles.brandingImg}>
-
+        <div className={styles.brandingImgcont}>
+            <div className={styles.brandingImg}></div>
         </div>
     </div>
   )

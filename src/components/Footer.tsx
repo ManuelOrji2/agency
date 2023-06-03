@@ -3,6 +3,8 @@ import linkedIn from '../images/linkedIn.png'
 import insta from "../images/insta.png"
 import fb from "../images/fb.png"
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { ValueProps, activeLinkContext } from "../context/Context"
 
 
 import styles from "../styles/Footer.module.css"
@@ -29,6 +31,8 @@ const socialLinks: social[] = [
 
 const Footer = () => {
 
+    const {setActiveLink} = useContext(activeLinkContext) as ValueProps
+
   return (
     <footer className='h-screen w-[50vw] relative'>
         <div className="absolute w-fit top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
@@ -37,7 +41,7 @@ const Footer = () => {
             <p className={styles.footerParag}>Got an idea that's been bugging you day and night? Don't keep it to yourself! Let us in on the secret and together we'll make it a reality!</p>
             <div className="flex items-center  justify-between text-xl font-bold">
                 <div></div>
-                <Link to="/contact" className="flex items-center gap-3 cursor-pointer">
+                <Link onClick={()=> setActiveLink("/contact")} to="/contact" className="flex items-center gap-3 cursor-pointer">
                     <span>SHARE WITH US</span>
                     <img src={rightArrow} alt=''/>
                 </Link>

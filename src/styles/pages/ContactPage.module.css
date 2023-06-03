@@ -2,6 +2,13 @@
     background: #9D9F9F;
 }
 
+.leftCon{
+    font-size: 300px;
+    font-family: 'TT Trailers Trial';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 86.5%;
+}
 
 .leftCon h1{
     position: absolute;
@@ -9,11 +16,6 @@
     height: 259px;
     left: 70px;
     top: calc(50% - 259px/2 - 129.5px);
-    font-family: 'TT Trailers Trial';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 300px;
-    line-height: 86.5%;
 
 }
 
@@ -72,3 +74,58 @@ input::-webkit-input-placeholder{
     font-size: 10px;
     line-height: 18px;
 }
+
+/* changing text */
+
+.changingTextCon{
+    position: absolute;
+    left: 60px;
+    overflow: hidden;
+    color: #202020;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: typing 5s steps(40,end) infinite, .9s step-end infinite;
+}
+
+.changingText{
+    width: fit-content;
+    position: relative;
+}
+
+.changingText::after{
+    content: "_";
+    position: absolute;
+    font-weight: 730;
+    right: 0px;
+    bottom: 10px;
+    animation: blink-caret-underline .4s step-end infinite;
+
+}
+
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    25%,50%,75%{
+     width: 47%;   
+    }
+    100%{
+        width: 0%;
+    }
+    
+}
+
+@keyframes blink-caret-underline {
+    from,to{
+        color: transparent;
+    }
+    50%{
+        color: #202020;
+
+    }
+}
+
+
+
+
