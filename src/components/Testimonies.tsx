@@ -61,8 +61,6 @@ export type Testifierprops ={
         type: "firstSlide",
         backgroundColor: "#FED557",
     },
-  
-     
     {
         name: "MCMANAMAN",
         testimony: "“Their professionalism, attention to detail, and dedication to our project were unparalleled.”",
@@ -105,8 +103,6 @@ export type Testifierprops ={
         type: "secondSlide",
         backgroundColor: "#fff",
     },
-   
-
   ]
 
   const firstSlide: Testifierprops[] = testifiers.filter((testifier)=> (testifier.type === "firstSlide"))
@@ -118,17 +114,11 @@ const Testimonies = () => {
     const [testifiers, setTestifiers] = useState(firstSlide);
 
     function slideRight(){
-        
         setTestifiers(secondSlide)
-
-        
     }
 
     function slideLeft(){
-        setTestifiers(firstSlide)
-
-
-        
+        setTestifiers(firstSlide)       
     }
 
     return (
@@ -137,9 +127,8 @@ const Testimonies = () => {
           <h1 className={`${styles.header} text-end font-bold`}>   WHAT OUR <br /> CLIENTS <br /> ARE SAYING</h1>
           <p className={styles.testiParag}>Want to hear the juiciest details about our work? Check out what our amazing clients have to say about us! We promise it'll be more entertaining than binge-watching your favourite show. Plus, it's all true!</p>
         </div>
-        <div className='flex flex-col gap-5 items-center justify-center'>
-           
-                <div className=' flex flex-wrap w-[650px] gap-3 '>
+        <div className='relative bg-green-500'>
+                <div className='absolute bottom-20 right-0 h-[550px] w-[650px] grid grid-cols-2 gap-3'>
                     {
                         testifiers.map((testifier: Testifierprops,i)=>(
                             <Card key={i} testifier={testifier} />
@@ -147,38 +136,35 @@ const Testimonies = () => {
                     }
                 </div>         
            
-            <div className='w-[335px] absolute bottom-10 right-24 flex items-center justify-between '>
-                <div className='flex gap-2 outline-none'>
-                    
-                    <button onClick={slideLeft}>
-                        {
-                        <img  src={testifiers===firstSlide? dot:grayDdot} alt=''/>
-                        
-                        }
-                    </button>
-                    <button onClick={slideRight}>
-                        {
-                        <img  src={testifiers===secondSlide? dot:grayDdot} alt=''/>
-                        }
-                    </button>
+                <div className='w-[350px] absolute bottom-10 right-[0px] flex items-center justify-between '>
+                    <div className='flex gap-2 outline-none'>
+                        <button className='outline-none' onClick={slideLeft}>
+                            {
+                            <img  src={testifiers===firstSlide? dot:grayDdot} alt=''/>
+                            
+                            }
+                        </button>
+                        <button className='outline-none' onClick={slideRight}>
+                            {
+                            <img  src={testifiers===secondSlide? dot:grayDdot} alt=''/>
+                            }
+                        </button>
+                    </div>
+                    <div className='flex gap-5'>
+                        <button className='outline-none' onClick={slideLeft}>
+                            {
+                            <img  src={testifiers===firstSlide? disableLeftArrow:leftArrow} alt=''/>
+                            
+                            }
+                        </button>
+                        <button className='outline-none' onClick={slideRight}>
+                            {
+                            <img  src={testifiers===secondSlide? disableRightArrow:rightArrow} alt=''/>
+                            }
+                        </button>
+                    </div>
                 </div>
-                <div className='flex gap-5'>
-                    <button onClick={slideLeft}>
-                        {
-                        <img  src={testifiers===firstSlide? disableLeftArrow: leftArrow} alt=''/>
-                        
-                        }
-                    </button>
-                    <button onClick={slideRight}>
-                        {
-                        <img  src={testifiers===secondSlide? disableRightArrow:rightArrow} alt=''/>
-                        }
-                    </button>
-                </div>
-                
-            </div>
         </div>
-        
       </main>
     )
 }

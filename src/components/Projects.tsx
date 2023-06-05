@@ -21,18 +21,18 @@ const Projects = () => {
           </Link>
         </div>
         <div className="flex max-w-[720px] absolute top-40 left-[850px]">
-            <div className={styles.projOne}>
+            <a href="/projects" className={styles.projOne}>
              
-            </div>
-            <div className={styles.projTwo}>
+            </a>
+            <a href="/projects" className={styles.projTwo}>
 
-            </div>
-            <div className={styles.projThree}>
+            </a>
+            <a href="/projects" className={styles.projThree}>
               
-            </div>
-            <div className={styles.projFour}>
+            </a>
+            <a href="/projects" className={styles.projFour}>
          
-            </div>
+            </a>
         </div>
       </main>
     )

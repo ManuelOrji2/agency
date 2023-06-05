@@ -19,7 +19,7 @@
     background: url('../images/about-img.png') no-repeat;
     width: 37.5%;
     height: 100%;
-    animation: changeImage 5s  infinite alternate-reverse;
+    animation: changeImage 5s step-start infinite alternate-reverse;
 }
 
 .aboutImg:hover{
@@ -31,11 +31,14 @@
 }
 
 @keyframes changeImage {
-    from{
+    0%{
+
+    }
+    50%{
     background: url('../images/about-img.png') no-repeat;
 
     }
-    to{
+    100%{
     background: url('../images/disruptivo-iQ15DTx-63k-unsplash\ 1.png') no-repeat;
     }
 }

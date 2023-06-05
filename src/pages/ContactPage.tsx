@@ -3,7 +3,7 @@ import linkedIn from '../images/linkedIn.png'
 import insta from "../images/insta.png"
 import fb from "../images/fb.png"
 import styles from "../styles/pages/ContactPage.module.css"
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 
