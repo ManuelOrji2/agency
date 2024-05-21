@@ -1,0 +1,10 @@
+.homePage {
+	@apply w-[70%] h-[100%] rounded-xl shadow-xl px-12 mt-8;
+}
+
+@media screen and (max-width: 670px) {
+	.homePage {
+		@apply w-full h-full px-0;
+		overflow: hidden;
+	}
+}

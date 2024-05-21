@@ -1,0 +1,64 @@
+.heroBtn {
+	@apply absolute h-20 w-20 right-[58%];
+
+	.letsChat {
+		animation: blink 1s alternate infinite;
+	}
+}
+
+@keyframes blink {
+	0% {
+		width: 75px;
+	}
+
+	100% {
+		width: 80px;
+	}
+}
+
+.contactLinks {
+	@apply absolute top-56 left-8 flex flex-col gap-8;
+}
+
+@media screen and (max-width: 1300px) {
+	.hero {
+		flex-direction: column-reverse;
+		text-align: center;
+		justify-content: center;
+		height: 70vh;
+		@apply px-2;
+
+		h1 {
+			@apply text-3xl mb-0;
+
+			.br {
+				display: none;
+			}
+		}
+		span {
+			@apply text-sm;
+		}
+
+		p {
+			@apply text-sm mt-1 px-2;
+		}
+
+		.heroImg {
+			img {
+				width: 285px;
+			}
+		}
+
+		.heroBtn {
+			right: 42%;
+			@apply h-14 w-14;
+
+			.letsChat {
+				@apply h-14 w-14;
+			}
+		}
+	}
+	.contactLinks {
+		@apply left-6;
+	}
+}
